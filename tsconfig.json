@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "downlevelIteration": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@app/*": ["./src/app/*"],
+      "@global/*": ["./src/global/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@ui/*": ["./src/global/ui/*"],
+      "@status/*": ["./src/modules/status/*"],
+      "@media/*": ["./src/modules/media/*"],
+      "@setting/*": ["./src/modules/setting/*"],
+      "@account/*": ["./src/modules/account/*"],
+      "@bookmark/*": ["./src/modules/bookmark/*"],
+      "@profiles/*": ["./src/modules/profiles/*"],
+      "@comments/*": ["./src/modules/comments/*"],
+      "@status-details/*": ["./src/modules/status-details/*"],
+      "@media-details/*": ["./src/modules/media-details/*"],
+      "@profile-details/*": ["./src/modules/profile-details/*"],
+      "@advanced-search/*": ["./src/modules/advanced-search/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,22 @@
+{
+  "condition": "OR",
+  "items": [
+    {
+      "id": "lsu8eoce",
+      "queryType": "number",
+      "allowedOperators": [
+        "eq",
+        "gt",
+        "lt",
+        "neq"
+      ],
+      "allowedTypes": [
+        "number"
+      ],
+      "isFirst": true,
+      "queryKey": "comment_index",
+      "operator": "lt",
+      "queryValue": "dwdw"
+    }
+  ]
+}

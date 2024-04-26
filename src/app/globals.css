@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient: linear-gradient(to top left, #091e3a, #2f80ed, #2d9ee0);
+    --background: 228 98.65% 98.26%;
+    /* #f6f8ff */
+    --foreground: 228 7.3% 0.52%;
+
+    --muted: 228 7.3% 91.3%;
+    --muted-foreground: 228 3.65% 41.3%;
+
+    --popover: 228 31.6% 100%;
+    --popover-foreground: 228 7.3% 0.65%;
+
+    --card: 228 31.6% 100%;
+    --card-foreground: 228 7.3% 0.65%;
+
+    --border: 228 12.3% 89.52%;
+    --input: 228 12.3% 89.52%;
+
+    --primary: 212 80% 50%;
+    /* #1979e6 */
+    --primary-foreground: 228 1.46% 91.3%;
+    --primary-shadow: 212 80% 95%;
+
+    --secondary: 228 3.65% 94.78%;
+    --secondary-foreground: 228 5.38% 11.3%;
+
+    --accent: 228 3.65% 94.78%;
+    --accent-foreground: 228 5.38% 11.3%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 212 80% 50%;
+
+    --radius: 0.5rem;
+
+    --theme-blue: #0099cc;
+  }
+  .dark {
+    --gradient: linear-gradient(to top left, #72c6ef, #004e8f);
+
+    --background: 212 52% 8.7%;
+    /* #0b1522 */
+    --foreground: 212 8% 98.45%;
+
+    --muted: 212 40% 23.459999999999997%;
+    --muted-foreground: 212 8% 56.9%;
+
+    --popover: 212 49% 13.11%;
+    --popover-foreground: 212 8% 98.45%;
+
+    --card: 212 49% 13.11%;
+    --card-foreground: 212 8% 98.45%;
+
+    --border: 212 40% 23.459999999999997%;
+    --input: 212 40% 23.459999999999997%;
+
+    --primary: 212 80% 69%;
+    /* #71acef */
+    --primary-foreground: 212 8% 6.8999999999999995%;
+    --primary-shadow: 212 80% 20%;
+
+    --secondary: 212 40% 23.459999999999997%;
+    --secondary-foreground: 212 8% 98.45%;
+
+    --accent: 212 40% 23.459999999999997%;
+    --accent-foreground: 212 8% 98.45%;
+
+    --destructive: 0 62.8% 55%;
+    --destructive-foreground: 212 8% 98.45%;
+
+    --ring: 212 80% 69%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.imageCard .swiper-pagination-bullet {
+  background-color: #6b7280 !important ;
+  opacity: 1 !important;
+}
+
+.imageCard .swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
+
+.imageCard
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 16px;
+}
+
+div.leaflet-control-container > div.leaflet-bottom.leaflet-right {
+  display: none !important;
+}
+
+.no-arabic {
+  font-variant-numeric: normal;
+}
